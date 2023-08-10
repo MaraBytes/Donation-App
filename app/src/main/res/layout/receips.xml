@@ -1,0 +1,61 @@
+<!-- Replace with your desired layout for each item in the RecyclerView -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_layout"
+    android:padding="5dp">
+
+    <RelativeLayout
+        android:id="@+id/rela1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:text="UNANIMOUS"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/locate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:backgroundTint="@color/blue"
+                android:text="LOCATE" />
+
+            <Button
+                android:id="@+id/contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:backgroundTint="@color/blue"
+                android:drawableRight="@drawable/email"
+                android:text="MAIL" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/approve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rela1"
+        android:layout_alignParentEnd="true"
+        android:backgroundTint="@color/blue"
+        android:drawableLeft="@drawable/ic_baseline_check_24"
+        android:drawableTint="@color/white"
+        android:text="APPROVE" />
+</RelativeLayout>

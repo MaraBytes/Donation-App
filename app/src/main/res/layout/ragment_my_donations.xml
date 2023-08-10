@@ -1,0 +1,23 @@
+<!-- fragment_my_donations.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGrey600"
+    tools:context=".MyDonationsFragment">
+
+    <Button
+        android:id="@+id/postDonation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="DONATE" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewDonations"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/postDonation"
+        android:layout_marginTop="5dp" />
+</RelativeLayout>

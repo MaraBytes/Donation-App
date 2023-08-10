@@ -1,0 +1,54 @@
+<!-- fragment_receipient_requests.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".ReceipientDonations">
+
+    <!-- Add your UI elements for the "Recipient Requests" fragment here -->
+
+    <EditText
+        android:id="@+id/editRequest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_edittext"
+        android:hint="Enter request here"
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/addRequest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editRequest"
+        android:text="ADD REQUEST"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/textm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addRequest"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="AVAILABLE DONATIONS"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewRequests"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/textm"
+        android:layout_marginTop="10dp" />
+
+    <include
+        android:id="@+id/emptyStateView"
+        layout="@layout/empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/textm"
+        android:visibility="gone" />
+
+</RelativeLayout>

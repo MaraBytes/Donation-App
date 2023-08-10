@@ -1,0 +1,11 @@
+<!-- fragment_my_donations.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/recyclerViewRecepients"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>

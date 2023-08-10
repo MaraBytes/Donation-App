@@ -1,0 +1,94 @@
+<!-- activity_register.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".registerActivity">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="24dp"
+        android:text="Registration"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTitle"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_edittext"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextEmail"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_edittext"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/editTextContact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextPassword"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_edittext"
+        android:hint="contact"
+        android:text="+254"
+        android:inputType="number"
+        android:padding="10dp" />
+
+    <Spinner
+        android:id="@+id/spinnerUserType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextContact"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="match_parent"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerUserType"
+        android:layout_marginTop="16dp"
+        android:text="Register" />
+
+    <TextView
+        android:id="@+id/textViewLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonRegister"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Already have an account? Login"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/textViewForgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="Forgot password?"
+        android:textColor="@color/colorPrimary" />
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+</RelativeLayout>

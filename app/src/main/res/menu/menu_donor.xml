@@ -1,0 +1,11 @@
+<!-- menu_donor.xml -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_my_donations"
+        android:title="My Donations"
+        android:icon="@drawable/ic_my_donations" />
+    <item
+        android:id="@+id/menu_requests"
+        android:title="Requests"
+        android:icon="@drawable/ic_requests" />
+</menu>
