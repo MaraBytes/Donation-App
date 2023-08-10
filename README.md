@@ -1,6 +1,4 @@
-# Your App Name
-
-Welcome to Your App Name! This app allows donors to connect with receivers and facilitate donations. It's built using Android Java and Firebase.
+This app allows donors to connect with receivers and facilitate donations. It's built using Android Java and Firebase.
 
 ## Installation
 
